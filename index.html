@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Internet Cyber - Keshav Kumar Pathak | Digital Services Jhanjharpur</title>
+<meta name="description" content="Student Internet Cyber by Keshav Kumar Pathak — trusted digital services in Jhanjharpur, Madhubani, Bihar. RTPS, Aadhaar, PAN, printing, photography & more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:root {
+  --navy: #0a0e27;
+  --navy-light: #121638;
+  --navy-mid: #1a1f4e;
+  --gold: #c9a84c;
+  --gold-light: #e8d48b;
+  --gold-dim: rgba(201,168,76,0.15);
+  --champagne: #f5f0e8;
+  --cream: #faf8f4;
+  --text-light: #e8e6e3;
+  --text-muted: #9b97a0;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(201,168,76,0.12);
+  --whatsapp: #25d366;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter','Noto Sans Devanagari',sans-serif;background:var(--navy);color:var(--text-light);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.hindi{font-family:'Noto Sans Devanagari','Inter',sans-serif}
+h1,h2,h3,.heading-font{font-family:'Playfair Display',serif}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:99px}
+
+/* ─── Scroll Animations ─── */
+.reveal{opacity:0;transform:translateY(60px);transition:opacity 0.9s cubic-bezier(.22,1,.36,1),transform 0.9s cubic-bezier(.22,1,.36,1)}
+.reveal.active{opacity:1;transform:translateY(0)}
+.reveal.exit{opacity:0;transform:translateY(-40px)}
+.reveal-left{opacity:0;transform:translateX(-80px);transition:opacity 0.9s cubic-bezier(.22,1,.36,1),transform 0.9s cubic-bezier(.22,1,.36,1)}
+.reveal-left.active{opacity:1;transform:translateX(0)}
+.reveal-left.exit{opacity:0;transform:translateX(80px)}
+.reveal-right{opacity:0;transform:translateX(80px);transition:opacity 0.9s cubic-bezier(.22,1,.36,1),transform 0.9s cubic-bezier(.22,1,.36,1)}
+.reveal-right.active{opacity:1;transform:translateX(0)}
+.reveal-right.exit{opacity:0;transform:translateX(-80px)}
+.reveal-scale{opacity:0;transform:scale(0.85);transition:opacity 0.8s cubic-bezier(.22,1,.36,1),transform 0.8s cubic-bezier(.22,1,.36,1)}
+.reveal-scale.active{opacity:1;transform:scale(1)}
+.reveal-scale.exit{opacity:0;transform:scale(0.9)}
+.stagger-1{transition-delay:0.08s}
+.stagger-2{transition-delay:0.16s}
+.stagger-3{transition-delay:0.24s}
+.stagger-4{transition-delay:0.32s}
+.stagger-5{transition-delay:0.4s}
+.stagger-6{transition-delay:0.48s}
+
+/* ─── Keyframes ─── */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pulse-gold{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0.5)}50%{box-shadow:0 0 0 14px rgba(201,168,76,0)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes spin-slow{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes dash{0%{stroke-dashoffset:1000}100%{stroke-dashoffset:0}}
+@keyframes particle-float{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-100vh) translateX(40px);opacity:0}}
+@keyframes ken-burns{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+@keyframes scroll-ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes glow-line{0%{opacity:0.2;transform:scaleX(0.3)}50%{opacity:1;transform:scaleX(1)}100%{opacity:0.2;transform:scaleX(0.3)}}
+@keyframes border-flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* ─── Utility Classes ─── */
+.gold-gradient{background:linear-gradient(135deg,var(--gold),var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gold-bg{background:linear-gradient(135deg,var(--gold),#d4af37,var(--gold-light))}
+.glass-card{background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:var(--radius)}
+.glass-card:hover{border-color:rgba(201,168,76,0.3);background:rgba(255,255,255,0.06)}
+.card-lift{transition:transform 0.4s cubic-bezier(.22,1,.36,1),box-shadow 0.4s ease,border-color 0.3s ease}
+.card-lift:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.shimmer-btn{background:linear-gradient(90deg,var(--gold),var(--gold-light),var(--gold),var(--gold-light));background-size:200% 100%;animation:shimmer 3s linear infinite;color:var(--navy);font-weight:700;border:none;cursor:pointer;border-radius:var(--radius-sm)}
+.section-padding{padding:100px 0}
+
+/* ─── Decorative Elements ─── */
+.section-decorator{position:relative;overflow:hidden}
+.section-decorator::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:glow-line 4s ease-in-out infinite}
+.corner-ornament{position:absolute;width:80px;height:80px;border:2px solid rgba(201,168,76,0.15);pointer-events:none}
+.corner-ornament.tl{top:20px;left:20px;border-right:none;border-bottom:none;border-radius:8px 0 0 0}
+.corner-ornament.tr{top:20px;right:20px;border-left:none;border-bottom:none;border-radius:0 8px 0 0}
+.corner-ornament.bl{bottom:20px;left:20px;border-right:none;border-top:none;border-radius:0 0 0 8px}
+.corner-ornament.br{bottom:20px;right:20px;border-left:none;border-top:none;border-radius:0 0 8px 0}
+.floating-shape{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.08),transparent 70%);pointer-events:none;animation:float 8s ease-in-out infinite}
+.glow-dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);opacity:0.3;pointer-events:none;box-shadow:0 0 12px rgba(201,168,76,0.4)}
+
+/* ─── Particle canvas ─── */
+.particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.particle{position:absolute;width:3px;height:3px;background:var(--gold);border-radius:50%;opacity:0;animation:particle-float linear infinite}
+
+/* ─── Header ─── */
+#header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(10,14,39,0.6);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,168,76,0.08);transition:all 0.4s ease}
+#header.scrolled{background:rgba(10,14,39,0.95);border-bottom-color:rgba(201,168,76,0.2);box-shadow:0 4px 30px rgba(0,0,0,0.3)}
+.nav-link{position:relative;color:var(--text-muted);font-weight:500;font-size:0.9rem;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;transition:color 0.3s;padding:4px 0}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width 0.4s cubic-bezier(.22,1,.36,1)}
+.nav-link:hover{color:var(--gold)}
+.nav-link:hover::after{width:100%}
+
+/* ─── Hero ─── */
+.hero-section{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg-img{position:absolute;inset:0;z-index:1;animation:ken-burns 25s infinite alternate}
+.hero-bg-img img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(10,14,39,0.92) 0%,rgba(18,22,56,0.85) 40%,rgba(26,31,78,0.78) 100%)}
+.hero-content{position:relative;z-index:3;text-align:center;max-width:900px;margin:0 auto;padding:0 24px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border:1px solid rgba(201,168,76,0.3);border-radius:99px;background:rgba(201,168,76,0.08);color:var(--gold);font-size:0.85rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:24px}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse-gold 2s infinite}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5.5vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:16px;color:#fff}
+.hero-subtitle{font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:600;margin-bottom:12px}
+.hero-desc{font-size:1.05rem;color:var(--text-muted);margin-bottom:36px;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-features{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:40px}
+.hero-feature{display:flex;align-items:center;gap:8px;padding:10px 20px;border-radius:99px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);color:var(--text-light);font-size:0.9rem;font-weight:500;transition:all 0.3s}
+.hero-feature:hover{background:rgba(201,168,76,0.12);border-color:rgba(201,168,76,0.3);transform:translateY(-2px)}
+.hero-feature i{color:var(--gold);font-size:1.1rem}
+.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;border-radius:var(--radius-sm);font-weight:700;font-size:1rem;text-decoration:none;transition:all 0.4s cubic-bezier(.22,1,.36,1)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#d4af37);color:var(--navy);box-shadow:0 4px 20px rgba(201,168,76,0.3)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(201,168,76,0.4)}
+.btn-whatsapp{background:var(--whatsapp);color:#fff;box-shadow:0 4px 20px rgba(37,211,102,0.3)}
+.btn-whatsapp:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(37,211,102,0.4)}
+.btn-outline{border:2px solid rgba(201,168,76,0.4);color:var(--gold);background:transparent}
+.btn-outline:hover{background:rgba(201,168,76,0.1);border-color:var(--gold);transform:translateY(-3px)}
+
+/* ─── Section Headers ─── */
+.section-header{text-align:center;margin-bottom:60px}
+.section-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid rgba(201,168,76,0.25);border-radius:99px;background:rgba(201,168,76,0.06);color:var(--gold);font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:#fff;margin-bottom:8px}
+.section-subtitle{font-size:1.05rem;color:var(--text-muted)}
+.section-line{display:block;width:60px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:99px;margin:16px auto 0}
+
+/* ─── Cards ─── */
+.feature-card{padding:32px 24px;border-radius:var(--radius);background:var(--glass);border:1px solid var(--glass-border);text-align:center;transition:all 0.4s cubic-bezier(.22,1,.36,1)}
+.feature-card:hover{border-color:rgba(201,168,76,0.3);background:rgba(255,255,255,0.06);transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.feature-icon{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(201,168,76,0.05));border:1px solid rgba(201,168,76,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;transition:all 0.4s}
+.feature-card:hover .feature-icon{background:linear-gradient(135deg,var(--gold),#d4af37);border-color:var(--gold)}
+.feature-card:hover .feature-icon i{color:var(--navy)}
+.feature-icon i{font-size:1.6rem;color:var(--gold);transition:color 0.3s}
+.feature-card h3{font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px}
+.feature-card p{color:var(--text-muted);font-size:0.9rem}
+
+/* ─── Service Blocks ─── */
+.service-category{margin-bottom:80px}
+.category-header{display:flex;align-items:center;gap:16px;margin-bottom:40px;padding-bottom:16px;border-bottom:1px solid rgba(201,168,76,0.1)}
+.category-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#d4af37);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.category-icon i{font-size:1.4rem;color:var(--navy)}
+.category-title{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff}
+.category-title span{font-family:'Noto Sans Devanagari',sans-serif;font-size:1.1rem;color:var(--text-muted);font-weight:400}
+.service-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:48px}
+.service-row.reverse .service-img{order:2}
+.service-row.reverse .service-info{order:1}
+.service-img{border-radius:var(--radius);overflow:hidden;position:relative}
+.service-img img{width:100%;height:320px;object-fit:cover;display:block;transition:transform 0.6s cubic-bezier(.22,1,.36,1)}
+.service-img:hover img{transform:scale(1.06)}
+.service-img::after{content:'';position:absolute;inset:0;border:1px solid rgba(201,168,76,0.1);border-radius:var(--radius);pointer-events:none}
+.service-info h4{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:12px}
+.service-info p{color:var(--text-muted);line-height:1.7;margin-bottom:20px;font-size:0.95rem}
+.enquire-link{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:600;text-decoration:none;font-size:0.95rem;transition:all 0.3s}
+.enquire-link:hover{gap:14px;color:var(--gold-light)}
+
+/* ─── Steps ─── */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative}
+.steps-grid::before{content:'';position:absolute;top:40px;left:15%;right:15%;height:2px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.2),rgba(201,168,76,0.4),rgba(201,168,76,0.2),transparent)}
+.step-card{text-align:center;position:relative}
+.step-number{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,rgba(201,168,76,0.12),rgba(201,168,76,0.04));border:2px solid rgba(201,168,76,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--gold);transition:all 0.4s}
+.step-card:hover .step-number{background:linear-gradient(135deg,var(--gold),#d4af37);color:var(--navy);border-color:var(--gold);transform:scale(1.1)}
+.step-card h3{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px}
+.step-card p{color:var(--text-muted);font-size:0.9rem}
+
+/* ─── Testimonials ─── */
+.testimonial-track{display:flex;gap:24px;animation:scroll-ticker 35s linear infinite;min-width:200%}
+.testimonial-track:hover{animation-play-state:paused}
+.testimonial-card{min-width:340px;padding:28px;border-radius:var(--radius);background:var(--glass);border:1px solid var(--glass-border);flex-shrink:0;transition:all 0.3s}
+.testimonial-card:hover{border-color:rgba(201,168,76,0.3);background:rgba(255,255,255,0.06)}
+.stars{display:flex;gap:2px;margin-bottom:16px}
+.stars i{color:var(--gold);font-size:1rem}
+.testimonial-card .quote{color:var(--text-light);line-height:1.6;margin-bottom:16px;font-size:0.95rem}
+.testimonial-card .author{font-weight:700;color:#fff;font-size:0.9rem}
+.testimonial-card .role{color:var(--text-muted);font-size:0.8rem}
+
+/* ─── Gallery ─── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-item{border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer;aspect-ratio:3/2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s cubic-bezier(.22,1,.36,1)}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,14,39,0.5),transparent);opacity:0;transition:opacity 0.3s}
+.gallery-item:hover::after{opacity:1}
+.gallery-item::before{content:'\eb7c';font-family:'remixicon';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.5);color:#fff;font-size:2rem;z-index:2;opacity:0;transition:all 0.4s}
+.gallery-item:hover::before{opacity:1;transform:translate(-50%,-50%) scale(1)}
+
+/* ─── Location ─── */
+.location-card{padding:40px;border-radius:var(--radius);background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(201,168,76,0.02));border:1px solid rgba(201,168,76,0.15)}
+.location-card h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:24px}
+.location-item{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px}
+.location-item i{color:var(--gold);font-size:1.4rem;margin-top:2px;flex-shrink:0}
+.location-item p,.location-item a{color:var(--text-light);font-size:0.95rem;line-height:1.6;text-decoration:none;transition:color 0.3s}
+.location-item a:hover{color:var(--gold)}
+
+/* ─── CTA Section ─── */
+.cta-section{background:linear-gradient(135deg,var(--navy-mid),var(--navy-light));position:relative}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,0.08),transparent 60%)}
+
+/* ─── Footer ─── */
+.site-footer{background:var(--navy);border-top:1px solid rgba(201,168,76,0.1)}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.footer-heading{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:16px}
+.footer-text{color:var(--text-muted);font-size:0.9rem;line-height:1.7}
+.footer-link{display:block;color:var(--text-muted);font-size:0.9rem;text-decoration:none;padding:4px 0;transition:all 0.3s}
+.footer-link:hover{color:var(--gold);padding-left:6px}
+.social-links{display:flex;gap:12px}
+.social-link{width:40px;height:40px;border-radius:50%;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:all 0.3s}
+.social-link:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-3px)}
+.footer-bottom{text-align:center;padding-top:30px;margin-top:40px;border-top:1px solid rgba(201,168,76,0.08);color:var(--text-muted);font-size:0.85rem}
+
+/* ─── FABs ─── */
+.fab-stack{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:90}
+.fab{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.3);transition:all 0.4s cubic-bezier(.22,1,.36,1)}
+.fab:hover{transform:translateY(-4px) scale(1.05)}
+.fab-gold{background:linear-gradient(135deg,var(--gold),#d4af37);animation:pulse-gold 3s infinite}
+.fab-green{background:var(--whatsapp)}
+#backToTop{position:fixed;bottom:24px;left:24px;width:48px;height:48px;border-radius:50%;background:var(--navy-mid);border:1px solid rgba(201,168,76,0.2);color:var(--gold);font-size:1.2rem;cursor:pointer;z-index:90;opacity:0;pointer-events:none;transition:all 0.4s;display:flex;align-items:center;justify-content:center}
+#backToTop.visible{opacity:1;pointer-events:auto}
+#backToTop:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+/* ─── Lightbox ─── */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(10,14,39,0.95);z-index:9999;align-items:center;justify-content:center}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90%;max-height:90%;object-fit:contain;border-radius:var(--radius)}
+
+/* ─── Mobile Menu ─── */
+#mobileMenu{position:fixed;inset:0;background:rgba(10,14,39,0.98);backdrop-filter:blur(20px);z-index:95;transform:translateX(100%);transition:transform 0.4s cubic-bezier(.22,1,.36,1)}
+#mobileMenu.open{transform:translateX(0)}
+.mobile-nav-link{display:block;padding:16px 0;font-size:1.3rem;font-weight:600;color:var(--text-light);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.08);transition:color 0.3s}
+.mobile-nav-link:hover{color:var(--gold)}
+
+/* ─── Separator lines between sections ─── */
+.section-sep{display:flex;align-items:center;justify-content:center;padding:20px 0}
+.section-sep-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.15),transparent)}
+.section-sep-diamond{width:10px;height:10px;background:var(--gold);transform:rotate(45deg);margin:0 16px;opacity:0.4}
+
+/* ─── Responsive ─── */
+@media(max-width:1024px){
+  .service-row{grid-template-columns:1fr;gap:24px}
+  .service-row.reverse .service-img{order:1}
+  .service-row.reverse .service-info{order:2}
+  .service-img img{height:260px}
+  .steps-grid{grid-template-columns:1fr;gap:32px}
+  .steps-grid::before{display:none}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .gallery-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .section-padding{padding:60px 0}
+  .hero-cta{flex-direction:column;align-items:center}
+  .btn-primary{width:100%;justify-content:center;max-width:320px}
+}
+</style>
+</head>
+<body>
+
+<!-- Particles Background -->
+<div class="particles" id="particles" aria-hidden="true"></div>
+
+<!-- ═══════════════════════ HEADER ═══════════════════════ -->
+<header id="header">
+<div style="max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:between">
+  <div style="display:flex;align-items:center;gap:14px;flex:1">
+    <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#d4af37);display:flex;align-items:center;justify-content:center">
+      <i class="ri-computer-line" style="color:var(--navy);font-size:1.4rem"></i>
+    </div>
+    <div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:#fff;line-height:1.2">Student Internet Cyber</h1>
+      <p class="hindi" style="font-size:0.75rem;color:var(--gold);margin-top:1px">आपका भरोसा, हमारी पहचान</p>
+    </div>
+  </div>
+  <nav style="display:flex;align-items:center;gap:32px" class="desktop-nav">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#gallery" class="nav-link">Gallery</a>
+    <a href="#location" class="nav-link">Location</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:16px;flex:1;justify-content:flex-end">
+    <a href="tel:8757136563" class="btn-primary btn-gold call-btn" style="padding:10px 24px;font-size:0.85rem">
+      <i class="ri-phone-fill"></i>
+      <span>Call Now</span>
+    </a>
+    <button id="menuBtn" style="display:none;width:44px;height:44px;background:none;border:1px solid rgba(201,168,76,0.2);border-radius:10px;color:var(--gold);font-size:1.4rem;cursor:pointer">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+</div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu">
+<div style="padding:24px">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:40px">
+    <h2 style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff">Menu</h2>
+    <button id="closeMenuBtn" style="width:44px;height:44px;background:none;border:1px solid rgba(201,168,76,0.2);border-radius:10px;color:var(--gold);font-size:1.5rem;cursor:pointer">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+  <nav>
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#gallery" class="mobile-nav-link">Gallery</a>
+    <a href="#location" class="mobile-nav-link">Location</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </nav>
+</div>
+</div>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="home" class="hero-section">
+<div class="hero-bg-img">
+  <img src="https://readdy.ai/api/search-image?query=modern%20indian%20cyber%20cafe%20interior%20with%20computers%20air%20conditioning%20professional%20lighting%20students%20working%20clean%20organized%20space%20realistic%20photography%20high%20quality%204k%20ultra%20detailed%20warm%20ambient%20lighting%20contemporary%20design&width=1920&height=1080&seq=hero001&orientation=landscape" alt="Student Internet Cyber">
+</div>
+<div class="hero-overlay"></div>
+
+<!-- Decorative SVG shapes in hero -->
+<svg style="position:absolute;top:10%;left:5%;z-index:3;opacity:0.06" width="200" height="200" viewBox="0 0 200 200" aria-hidden="true">
+  <circle cx="100" cy="100" r="95" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="8 8" style="animation:spin-slow 40s linear infinite"/>
+</svg>
+<svg style="position:absolute;bottom:15%;right:8%;z-index:3;opacity:0.05" width="150" height="150" viewBox="0 0 150 150" aria-hidden="true">
+  <rect x="10" y="10" width="130" height="130" rx="20" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="6 6" style="animation:spin-slow 50s linear infinite reverse"/>
+</svg>
+
+<div class="hero-content">
+  <div class="reveal" style="transition-delay:0.1s">
+    <div class="hero-badge"><span class="dot"></span> Trusted Digital Services</div>
+  </div>
+  <h2 class="hero-title reveal" style="transition-delay:0.2s">
+    All In One <span class="gold-gradient">Digital Services</span>
+  </h2>
+  <p class="hero-subtitle gold-gradient hindi reveal" style="transition-delay:0.3s">
+    आपके शहर की सबसे भरोसेमंद डिजिटल दुकान
+  </p>
+  <p class="hero-desc reveal" style="transition-delay:0.4s">Study. Work. Print. Succeed.</p>
+  <div class="hero-features reveal" style="transition-delay:0.5s">
+    <div class="hero-feature"><i class="ri-shield-check-fill"></i><span>100% Trusted</span></div>
+    <div class="hero-feature"><i class="ri-flashlight-fill"></i><span>Fast Service</span></div>
+    <div class="hero-feature"><i class="ri-price-tag-3-fill"></i><span>Affordable</span></div>
+    <div class="hero-feature"><i class="ri-cctv-fill"></i><span>CCTV Secure</span></div>
+    <div class="hero-feature"><i class="ri-temp-cold-line"></i><span>AC Environment</span></div>
+  </div>
+  <div class="hero-cta reveal" style="transition-delay:0.6s">
+    <a href="https://wa.me/918757136563" class="btn-primary btn-whatsapp">
+      <i class="ri-whatsapp-fill" style="font-size:1.3rem"></i>
+      <span>WhatsApp Now</span>
+    </a>
+    <a href="#services" class="btn-primary btn-outline">
+      <span>View Services</span>
+      <i class="ri-arrow-right-line"></i>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- Section Separator -->
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ WHY CHOOSE US ═══════════════════════ -->
+<section class="section-padding section-decorator" style="background:var(--navy-light)">
+<div class="corner-ornament tl"></div><div class="corner-ornament tr"></div>
+<div class="floating-shape" style="width:300px;height:300px;top:-80px;right:-80px"></div>
+<div class="floating-shape" style="width:200px;height:200px;bottom:-60px;left:-60px;animation-delay:4s"></div>
+<div class="glow-dot" style="top:20%;left:10%"></div>
+<div class="glow-dot" style="bottom:30%;right:12%"></div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-star-fill"></i> Why Choose Us</div>
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle hindi">हमें क्यों चुनें</p>
+    <span class="section-line"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="features-grid">
+    <div class="feature-card reveal stagger-1 card-lift">
+      <div class="feature-icon"><i class="ri-speed-fill"></i></div>
+      <h3>High Speed Internet</h3>
+      <p class="hindi">तेज़ इंटरनेट सेवा</p>
+    </div>
+    <div class="feature-card reveal stagger-2 card-lift">
+      <div class="feature-icon"><i class="ri-computer-line"></i></div>
+      <h3>New Systems</h3>
+      <p class="hindi">नए कंप्यूटर सिस्टम</p>
+    </div>
+    <div class="feature-card reveal stagger-3 card-lift">
+      <div class="feature-icon"><i class="ri-cctv-fill"></i></div>
+      <h3>CCTV Security</h3>
+      <p class="hindi">सीसीटीवी सुरक्षा</p>
+    </div>
+    <div class="feature-card reveal stagger-4 card-lift">
+      <div class="feature-icon"><i class="ri-flashlight-fill"></i></div>
+      <h3>Power Backup</h3>
+      <p class="hindi">बिजली बैकअप</p>
+    </div>
+    <div class="feature-card reveal stagger-5 card-lift">
+      <div class="feature-icon"><i class="ri-temp-cold-line"></i></div>
+      <h3>AC Environment</h3>
+      <p class="hindi">वातानुकूलित वातावरण</p>
+    </div>
+    <div class="feature-card reveal stagger-6 card-lift">
+      <div class="feature-icon"><i class="ri-customer-service-2-fill"></i></div>
+      <h3>Friendly Support</h3>
+      <p class="hindi">मित्रवत सहायता</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+<section id="services" class="section-padding section-decorator">
+<div class="corner-ornament bl"></div><div class="corner-ornament br"></div>
+<div class="floating-shape" style="width:250px;height:250px;top:10%;left:-80px;animation-delay:2s"></div>
+
+<!-- Decorative vertical line -->
+<svg style="position:absolute;top:0;left:50%;transform:translateX(-50%);height:100%;width:2px;opacity:0.06;z-index:0" aria-hidden="true">
+  <line x1="1" y1="0" x2="1" y2="100%" stroke="var(--gold)" stroke-width="2" stroke-dasharray="12 12"/>
+</svg>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-service-fill"></i> Our Services</div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle hindi">हमारी सेवाएं</p>
+    <span class="section-line"></span>
+  </div>
+
+  <!-- Government & Documents -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-government-fill"></i></div>
+      <div class="category-title">Government & Documents <span class="hindi">| सरकारी और दस्तावेज़</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=indian%20person%20filling%20government%20form%20rtps%20certificate%20application%20official%20document%20desk%20realistic%20photography%20professional%20office%20setting%204k%20ultra%20detailed%20natural%20lighting&width=800&height=600&seq=gov001&orientation=landscape" alt="RTPS Certificate"></div>
+      <div class="service-info">
+        <h4>RTPS Certificate Services</h4>
+        <p class="hindi">जाति प्रमाण पत्र, आय प्रमाण पत्र, निवास प्रमाण पत्र - सभी RTPS सेवाएं उपलब्ध। Fast processing with complete documentation support.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20RTPS%20Certificate" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Aadhaar & PAN Services</h4>
+        <p class="hindi">आधार कार्ड नया बनवाना, अपडेट, करेक्शन। PAN कार्ड अप्लाई और डुप्लीकेट। Complete assistance for all identity documents.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Aadhaar%20PAN%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=aadhaar%20card%20pan%20card%20indian%20identity%20documents%20on%20desk%20official%20government%20id%20realistic%20photography%20professional%204k%20ultra%20detailed%20clean%20background&width=800&height=600&seq=gov002&orientation=landscape" alt="Aadhaar PAN"></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=passport%20application%20form%20passport%20photo%20booth%20professional%20photography%20setup%20indian%20passport%20office%20realistic%204k%20ultra%20detailed%20clean%20modern%20setting&width=800&height=600&seq=gov003&orientation=landscape" alt="Passport Services"></div>
+      <div class="service-info">
+        <h4>Passport Application & Photos</h4>
+        <p class="hindi">पासपोर्ट के लिए ऑनलाइन अप्लाई, फॉर्म भरना, पासपोर्ट साइज फोटो। Professional photo booth with instant printing.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Passport%20service" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Student & Scholarship -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-graduation-cap-fill"></i></div>
+      <div class="category-title">Student & Scholarship <span class="hindi">| छात्र और छात्रवृत्ति</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=student%20filling%20scholarship%20form%20online%20computer%20screen%20showing%20scholarship%20portal%20indian%20student%20realistic%20photography%204k%20ultra%20detailed%20educational%20setting&width=800&height=600&seq=stu001&orientation=landscape" alt="Scholarship Form"></div>
+      <div class="service-info">
+        <h4>Scholarship Application</h4>
+        <p class="hindi">सभी प्रकार की छात्रवृत्ति फॉर्म - Pre Matric, Post Matric, National Scholarship Portal। Complete form filling and document upload assistance.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Scholarship%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>College & University Forms</h4>
+        <p class="hindi">कॉलेज एडमिशन फॉर्म, यूनिवर्सिटी रजिस्ट्रेशन, परीक्षा फॉर्म। Expert guidance for all educational applications and registrations.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20College%20form%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=college%20admission%20form%20university%20registration%20student%20at%20computer%20filling%20online%20application%20realistic%20photography%204k%20ultra%20detailed%20educational%20environment&width=800&height=600&seq=stu002&orientation=landscape" alt="College Forms"></div>
+    </div>
+  </div>
+
+  <!-- Banking & Financial -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-bank-fill"></i></div>
+      <div class="category-title">Banking & Financial <span class="hindi">| बैंकिंग और वित्तीय</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=bank%20passbook%20loan%20documents%20financial%20papers%20on%20desk%20indian%20banking%20realistic%20photography%20professional%204k%20ultra%20detailed%20clean%20organized&width=800&height=600&seq=bank001&orientation=landscape" alt="Bank Account"></div>
+      <div class="service-info">
+        <h4>Bank Account & Loan Services</h4>
+        <p class="hindi">बैंक खाता खोलना, लोन अप्लाई, पासबुक प्रिंट। Complete banking assistance for all major banks including SBI, PNB, BOI.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Banking%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Insurance & Investment</h4>
+        <p class="hindi">जीवन बीमा, स्वास्थ्य बीमा, म्यूचुअल फंड निवेश। Professional guidance for all insurance and investment needs.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Insurance%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=insurance%20policy%20documents%20investment%20papers%20financial%20planning%20realistic%20photography%20professional%204k%20ultra%20detailed%20modern%20office%20setting&width=800&height=600&seq=bank002&orientation=landscape" alt="Insurance Investment"></div>
+    </div>
+  </div>
+
+  <!-- Mobile & Digital -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-smartphone-fill"></i></div>
+      <div class="category-title">Mobile & Digital <span class="hindi">| मोबाइल और डिजिटल</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=mobile%20recharge%20screen%20upi%20payment%20digital%20transaction%20smartphone%20display%20realistic%20photography%204k%20ultra%20detailed%20modern%20interface%20clean&width=800&height=600&seq=mob001&orientation=landscape" alt="Mobile Recharge"></div>
+      <div class="service-info">
+        <h4>Mobile Recharge & Digital Payment</h4>
+        <p class="hindi">मोबाइल रिचार्ज, DTH रिचार्ज, UPI पेमेंट, बिल पेमेंट। Instant recharge for all operators with cashback offers.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Recharge%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Email & Social Media Setup</h4>
+        <p class="hindi">ईमेल आईडी बनाना, सोशल मीडिया अकाउंट सेटअप, डिजिटल प्रोफाइल। Complete digital presence setup for students and professionals.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Digital%20setup%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=email%20setup%20social%20media%20accounts%20digital%20profile%20computer%20screen%20realistic%20photography%204k%20ultra%20detailed%20modern%20interface%20professional&width=800&height=600&seq=mob002&orientation=landscape" alt="Email Social Media"></div>
+    </div>
+  </div>
+
+  <!-- Print & Stationery -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-printer-fill"></i></div>
+      <div class="category-title">Print & Stationery <span class="hindi">| प्रिंट और स्टेशनरी</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=printer%20printing%20documents%20xerox%20machine%20paper%20output%20realistic%20photography%20professional%20print%20shop%204k%20ultra%20detailed%20clean%20modern&width=800&height=600&seq=print001&orientation=landscape" alt="Xerox Printout"></div>
+      <div class="service-info">
+        <h4>Xerox & Printout Services</h4>
+        <p class="hindi">ज़ेरॉक्स, प्रिंटआउट, कलर प्रिंट, स्कैनिंग। High quality printing with fast turnaround. Black & white and color options available.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Printing%20service" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Lamination & Binding</h4>
+        <p class="hindi">लैमिनेशन, बाइंडिंग, स्पाइरल बाइंडिंग। Professional document finishing services for projects, reports, and certificates.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Lamination%20Binding" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=lamination%20machine%20document%20binding%20spiral%20binding%20professional%20finishing%20realistic%20photography%204k%20ultra%20detailed%20print%20shop%20equipment&width=800&height=600&seq=print002&orientation=landscape" alt="Lamination Binding"></div>
+    </div>
+  </div>
+
+  <!-- Photography & Videography -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-camera-fill"></i></div>
+      <div class="category-title">Photography & Videography <span class="hindi">| फोटोग्राफी और वीडियोग्राफी</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=professional%20camera%20tripod%20photography%20setup%20event%20photography%20equipment%20realistic%20photography%204k%20ultra%20detailed%20studio%20lighting%20modern&width=800&height=600&seq=photo001&orientation=landscape" alt="Event Photography"></div>
+      <div class="service-info">
+        <h4>Event Photography & Videography</h4>
+        <p class="hindi">शादी, जन्मदिन, पार्टी की फोटोग्राफी और वीडियोग्राफी। Professional coverage with HD quality output and same-day editing available.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Event%20Photography" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Passport & ID Photos</h4>
+        <p class="hindi">पासपोर्ट साइज फोटो, आधार फोटो, सभी आईडी फोटो। Instant photo booth with government-compliant specifications and immediate printing.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Passport%20Photo" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=passport%20photo%20booth%20id%20photo%20studio%20professional%20photography%20setup%20instant%20print%20realistic%204k%20ultra%20detailed%20clean%20white%20background&width=800&height=600&seq=photo002&orientation=landscape" alt="Passport Photo"></div>
+    </div>
+  </div>
+
+  <!-- Reels & Digital Creation -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-movie-2-fill"></i></div>
+      <div class="category-title">Reels & Digital Creation <span class="hindi">| रील्स और डिजिटल क्रिएशन</span></div>
+    </div>
+
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=video%20editing%20software%20screen%20reels%20creation%20digital%20content%20editing%20timeline%20realistic%20photography%204k%20ultra%20detailed%20modern%20interface%20professional&width=800&height=600&seq=reel001&orientation=landscape" alt="Reels Creation"></div>
+      <div class="service-info">
+        <h4>Instagram Reels & YouTube Shorts</h4>
+        <p class="hindi">इंस्टाग्राम रील्स, यूट्यूब शॉर्ट्स बनाना। Professional editing with trending effects, music, and captions for viral content.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Reels%20creation%20help" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Video Editing & Effects</h4>
+        <p class="hindi">वीडियो एडिटिंग, स्पेशल इफेक्ट्स, कलर ग्रेडिंग। Advanced editing for weddings, events, promotional videos with cinematic quality.</p>
+        <a href="https://wa.me/918757136563?text=I%20need%20Video%20Editing" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="https://readdy.ai/api/search-image?query=professional%20video%20editing%20workstation%20color%20grading%20effects%20timeline%20realistic%20photography%204k%20ultra%20detailed%20modern%20studio%20setup&width=800&height=600&seq=reel002&orientation=landscape" alt="Video Editing"></div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
+<section class="section-padding section-decorator" style="background:var(--navy-light)">
+<div class="corner-ornament tl"></div><div class="corner-ornament br"></div>
+<div class="floating-shape" style="width:180px;height:180px;top:50%;right:-60px;animation-delay:3s"></div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-route-fill"></i> How It Works</div>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle hindi">यह कैसे काम करता है</p>
+    <span class="section-line"></span>
+  </div>
+  <div class="steps-grid">
+    <div class="step-card reveal stagger-1">
+      <div class="step-number">1</div>
+      <h3>Visit or Call</h3>
+      <p class="hindi">हमारे पास आएं या कॉल करें</p>
+    </div>
+    <div class="step-card reveal stagger-2">
+      <div class="step-number">2</div>
+      <h3>Share Requirement</h3>
+      <p class="hindi">अपनी आवश्यकता बताएं</p>
+    </div>
+    <div class="step-card reveal stagger-3">
+      <div class="step-number">3</div>
+      <h3>Get It Done Fast</h3>
+      <p class="hindi">तेज़ी से काम पूरा करें</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+<section class="section-padding section-decorator">
+<div class="glow-dot" style="top:15%;left:8%"></div>
+<div class="glow-dot" style="bottom:20%;right:6%"></div>
+<div class="glow-dot" style="top:60%;left:50%"></div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-chat-quote-fill"></i> Testimonials</div>
+    <h2 class="section-title hindi">ग्राहक समीक्षा</h2>
+    <p class="section-subtitle">Customer Testimonials</p>
+    <span class="section-line"></span>
+  </div>
+</div>
+<div style="overflow:hidden" class="reveal">
+  <div class="testimonial-track">
+    <div style="display:flex;gap:24px">
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p>
+        <p class="author">Priya Kumari</p>
+        <p class="role">Student, Madhubani</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p>
+        <p class="author">Rajesh Kumar</p>
+        <p class="role">Businessman, Jhanjharpur</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p>
+        <p class="author">Anita Devi</p>
+        <p class="role">Teacher, Kaithinia</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p>
+        <p class="author">Amit Singh</p>
+        <p class="role">Student, Madhubani</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p>
+        <p class="author">Sanjay Kumar</p>
+        <p class="role">Groom, Jhanjharpur</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:24px">
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p>
+        <p class="author">Priya Kumari</p>
+        <p class="role">Student, Madhubani</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p>
+        <p class="author">Rajesh Kumar</p>
+        <p class="role">Businessman, Jhanjharpur</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p>
+        <p class="author">Anita Devi</p>
+        <p class="role">Teacher, Kaithinia</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p>
+        <p class="author">Amit Singh</p>
+        <p class="role">Student, Madhubani</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+        <p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p>
+        <p class="author">Sanjay Kumar</p>
+        <p class="role">Groom, Jhanjharpur</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ GALLERY ═══════════════════════ -->
+<section id="gallery" class="section-padding section-decorator" style="background:var(--navy-light)">
+<div class="corner-ornament tl"></div><div class="corner-ornament tr"></div>
+<div class="corner-ornament bl"></div><div class="corner-ornament br"></div>
+<div class="floating-shape" style="width:220px;height:220px;bottom:-80px;right:20%;animation-delay:5s"></div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-gallery-fill"></i> Gallery</div>
+    <h2 class="section-title hindi">हमारी सेवाएं और कार्य</h2>
+    <p class="section-subtitle">Our Services & Work</p>
+    <span class="section-line"></span>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal-scale stagger-1"><img src="https://readdy.ai/api/search-image?query=modern%20cyber%20cafe%20interior%20computers%20students%20working%20professional%20setup%20realistic%20photography%204k%20ultra%20detailed%20clean%20organized&width=600&height=400&seq=gal001&orientation=landscape" alt="Cyber Cafe Interior"></div>
+    <div class="gallery-item reveal-scale stagger-2"><img src="https://readdy.ai/api/search-image?query=friendly%20shopkeeper%20helping%20customer%20cyber%20cafe%20counter%20service%20realistic%20photography%204k%20ultra%20detailed%20warm%20professional&width=600&height=400&seq=gal002&orientation=landscape" alt="Customer Service"></div>
+    <div class="gallery-item reveal-scale stagger-3"><img src="https://readdy.ai/api/search-image?query=professional%20printer%20scanner%20equipment%20printing%20documents%20realistic%20photography%204k%20ultra%20detailed%20modern%20office&width=600&height=400&seq=gal003&orientation=landscape" alt="Printing Services"></div>
+    <div class="gallery-item reveal-scale stagger-4"><img src="https://readdy.ai/api/search-image?query=passport%20photo%20booth%20studio%20lighting%20professional%20photography%20setup%20realistic%204k%20ultra%20detailed%20clean&width=600&height=400&seq=gal004&orientation=landscape" alt="Photo Studio"></div>
+    <div class="gallery-item reveal-scale stagger-5"><img src="https://readdy.ai/api/search-image?query=wedding%20photography%20camera%20equipment%20event%20coverage%20professional%20setup%20realistic%204k%20ultra%20detailed&width=600&height=400&seq=gal005&orientation=landscape" alt="Wedding Photography"></div>
+    <div class="gallery-item reveal-scale stagger-6"><img src="https://readdy.ai/api/search-image?query=bank%20documents%20passbook%20financial%20papers%20desk%20realistic%20photography%204k%20ultra%20detailed%20professional&width=600&height=400&seq=gal006&orientation=landscape" alt="Banking Services"></div>
+  </div>
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ LOCATION ═══════════════════════ -->
+<section id="location" class="section-padding section-decorator">
+<div class="glow-dot" style="top:10%;right:15%"></div>
+<div class="glow-dot" style="bottom:15%;left:10%"></div>
+<div class="floating-shape" style="width:260px;height:260px;top:-60px;left:60%;animation-delay:1s"></div>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1">
+  <div class="section-header reveal">
+    <div class="section-tag"><i class="ri-map-pin-fill"></i> Location</div>
+    <h2 class="section-title hindi">हमारा स्थान</h2>
+    <p class="section-subtitle">Our Location</p>
+    <span class="section-line"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start" class="location-grid">
+    <div class="reveal-left">
+      <div class="location-card">
+        <h3>Visit Us</h3>
+        <div class="location-item">
+          <i class="ri-map-pin-fill"></i>
+          <div>
+            <p style="font-weight:600">Near Kaithinia Durgasthan</p>
+            <p>Opposite Panchayat Bhawan</p>
+            <p>Near SBI Bank Kaithinia</p>
+            <p>Infront of Maa Laxmi Flex Printers</p>
+            <p style="font-weight:700;margin-top:8px;color:var(--gold)">Jhanjharpur, Kaithinia, Madhubani, Bihar</p>
+          </div>
+        </div>
+        <div class="location-item">
+          <i class="ri-phone-fill"></i>
+          <a href="tel:8757136563" style="font-weight:600;font-size:1.1rem">8757136563</a>
+        </div>
+        <div class="location-item">
+          <i class="ri-whatsapp-fill"></i>
+          <a href="https://wa.me/918757136563" style="font-weight:600">WhatsApp: 8757136563</a>
+        </div>
+        <div class="location-item">
+          <i class="ri-user-fill"></i>
+          <p>Proprietor: <strong style="color:var(--gold)">Keshav Kumar Pathak</strong></p>
+        </div>
+        <a href="https://maps.google.com/?q=Kaithinia+Jhanjharpur+Madhubani+Bihar" target="_blank" class="btn-primary btn-gold" style="margin-top:24px;padding:12px 28px;font-size:0.9rem;display:inline-flex">
+          <i class="ri-map-pin-line"></i>
+          <span>Get Directions</span>
+        </a>
+      </div>
+      <div style="margin-top:20px;padding:20px;border-radius:var(--radius-sm);background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.1)">
+        <h4 style="font-weight:700;color:#fff;margin-bottom:8px" class="hindi">सेवा क्षेत्र</h4>
+        <p style="color:var(--text-muted);font-size:0.9rem" class="hindi">RTPS एवं ऑनलाइन सेवा — पूरे मधुबनी जिले के सभी प्रखंडों के लिए उपलब्ध</p>
+      </div>
+    </div>
+    <div class="reveal-right" style="border-radius:var(--radius);overflow:hidden;height:480px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.5!2d86.2!3d26.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEyJzAwLjAiTiA4NsKwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style="border:0;border-radius:var(--radius)" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="section-sep"><div class="section-sep-line"></div><div class="section-sep-diamond"></div><div class="section-sep-line"></div></div>
+
+<!-- ═══════════════════════ CTA ═══════════════════════ -->
+<section id="contact" class="section-padding cta-section section-decorator">
+<div class="corner-ornament tl"></div><div class="corner-ornament tr"></div>
+<div class="corner-ornament bl"></div><div class="corner-ornament br"></div>
+
+<!-- Decorative SVG rings -->
+<svg style="position:absolute;top:50%;left:5%;transform:translateY(-50%);opacity:0.04;z-index:0" width="200" height="200" viewBox="0 0 200 200" aria-hidden="true">
+  <circle cx="100" cy="100" r="90" fill="none" stroke="var(--gold)" stroke-width="1"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="50" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+</svg>
+<svg style="position:absolute;top:50%;right:5%;transform:translateY(-50%);opacity:0.04;z-index:0" width="200" height="200" viewBox="0 0 200 200" aria-hidden="true">
+  <circle cx="100" cy="100" r="90" fill="none" stroke="var(--gold)" stroke-width="1"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="50" fill="none" stroke="var(--gold)" stroke-width="0.5"/>
+</svg>
+
+<div style="max-width:700px;margin:0 auto;padding:0 24px;text-align:center;position:relative;z-index:1" class="reveal">
+  <h2 class="section-title" style="margin-bottom:12px">Ready to Get Started?</h2>
+  <p class="section-subtitle hindi" style="margin-bottom:40px">आज ही संपर्क करें और अपना काम पूरा करें</p>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
+    <a href="tel:8757136563" class="btn-primary btn-gold" style="font-size:1.05rem;padding:18px 40px">
+      <i class="ri-phone-fill" style="font-size:1.3rem"></i>
+      <span>Call Now: 8757136563</span>
+    </a>
+    <a href="https://wa.me/918757136563" class="btn-primary btn-whatsapp" style="font-size:1.05rem;padding:18px 40px">
+      <i class="ri-whatsapp-fill" style="font-size:1.3rem"></i>
+      <span>WhatsApp Now</span>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer" style="padding:60px 0 30px">
+<div style="max-width:1200px;margin:0 auto;padding:0 24px">
+  <div class="footer-grid">
+    <div>
+      <h3 class="footer-heading">Student Internet Cyber</h3>
+      <p class="footer-text hindi" style="margin-bottom:8px">आपका भरोसा, हमारी पहचान</p>
+      <p class="footer-text" style="font-style:italic">Proprietor: Keshav Kumar Pathak</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact</h4>
+      <p class="footer-text" style="margin-bottom:4px">Near Kaithinia Durgasthan</p>
+      <p class="footer-text" style="margin-bottom:8px">Jhanjharpur, Madhubani, Bihar</p>
+      <a href="tel:8757136563" class="footer-link" style="color:var(--gold)">Phone: 8757136563</a>
+      <a href="https://wa.me/918757136563" class="footer-link" style="color:var(--whatsapp)">WhatsApp: 8757136563</a>
+    </div>
+    <div>
+      <h4 class="footer-heading hindi">सेवा क्षेत्र</h4>
+      <p class="footer-text hindi">RTPS एवं ऑनलाइन सेवा — पूरे मधुबनी जिले के सभी प्रखंडों के लिए उपलब्ध</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <a href="#home" class="footer-link">Home</a>
+      <a href="#services" class="footer-link">Services</a>
+      <a href="#gallery" class="footer-link">Gallery</a>
+      <a href="#location" class="footer-link">Location</a>
+      <a href="#contact" class="footer-link">Contact</a>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:center;margin-top:40px;margin-bottom:20px">
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+      <a href="#" class="social-link"><i class="ri-instagram-fill"></i></a>
+      <a href="#" class="social-link"><i class="ri-youtube-fill"></i></a>
+      <a href="#" class="social-link"><i class="ri-twitter-fill"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Student Internet Cyber. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+<!-- ═══════════════════════ FABs ═══════════════════════ -->
+<div class="fab-stack">
+  <a href="tel:8757136563" class="fab fab-gold"><i class="ri-phone-fill"></i></a>
+  <a href="https://wa.me/918757136563" class="fab fab-green"><i class="ri-whatsapp-fill"></i></a>
+</div>
+
+<button id="backToTop"><i class="ri-arrow-up-line"></i></button>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <button id="closeLightbox" style="position:absolute;top:24px;right:24px;width:48px;height:48px;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);border-radius:50%;color:#fff;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10">
+    <i class="ri-close-line"></i>
+  </button>
+  <img id="lightboxImg" src="" alt="Gallery Image">
+</div>
+
+<!-- ═══════════════════════ SCRIPTS ═══════════════════════ -->
+<script>
+(function(){
+  // ─── Particles ───
+  const pc=document.getElementById('particles');
+  for(let i=0;i<20;i++){
+    const p=document.createElement('div');
+    p.className='particle';
+    p.style.left=Math.random()*100+'%';
+    p.style.animationDuration=(12+Math.random()*18)+'s';
+    p.style.animationDelay=Math.random()*15+'s';
+    pc.appendChild(p);
+  }
+
+  // ─── Header scroll ───
+  const header=document.getElementById('header');
+  window.addEventListener('scroll',()=>{
+    header.classList.toggle('scrolled',window.scrollY>60);
+  },{passive:true});
+
+  // ─── Mobile menu ───
+  const menuBtn=document.getElementById('menuBtn');
+  const closeMenuBtn=document.getElementById('closeMenuBtn');
+  const mobileMenu=document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click',()=>mobileMenu.classList.add('open'));
+  closeMenuBtn.addEventListener('click',()=>mobileMenu.classList.remove('open'));
+  document.querySelectorAll('.mobile-nav-link').forEach(l=>l.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+
+  // ─── Responsive nav toggle ───
+  function checkNav(){
+    const w=window.innerWidth;
+    const dn=document.querySelector('.desktop-nav');
+    const cb=document.querySelector('.call-btn');
+    if(w<=1024){
+      dn.style.display='none';
+      menuBtn.style.display='flex';
+      if(cb)cb.style.display=w<=640?'none':'inline-flex';
+    }else{
+      dn.style.display='flex';
+      menuBtn.style.display='none';
+      if(cb)cb.style.display='inline-flex';
+    }
+  }
+  checkNav();
+  window.addEventListener('resize',checkNav);
+
+  // ─── Scroll reveal with entry AND exit ───
+  const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
+  const revealObs=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('active');
+        entry.target.classList.remove('exit');
+      }else{
+        // Only exit if it was previously active and now scrolled past
+        if(entry.target.classList.contains('active')){
+          const rect=entry.boundingClientRect;
+          if(rect.top<0){
+            entry.target.classList.add('exit');
+            entry.target.classList.remove('active');
+          }
+        }
+      }
+    });
+  },{threshold:0.08,rootMargin:'-40px 0px'});
+  revealEls.forEach(el=>revealObs.observe(el));
+
+  // ─── Gallery lightbox ───
+  const lightbox=document.getElementById('lightbox');
+  const lightboxImg=document.getElementById('lightboxImg');
+  document.querySelectorAll('.gallery-item img').forEach(img=>{
+    img.addEventListener('click',()=>{
+      lightboxImg.src=img.src;
+      lightbox.classList.add('active');
+      document.body.style.overflow='hidden';
+    });
+  });
+  document.getElementById('closeLightbox').addEventListener('click',()=>{
+    lightbox.classList.remove('active');
+    document.body.style.overflow='';
+  });
+  lightbox.addEventListener('click',e=>{
+    if(e.target===lightbox){
+      lightbox.classList.remove('active');
+      document.body.style.overflow='';
+    }
+  });
+
+  // ─── Back to top ───
+  const btt=document.getElementById('backToTop');
+  window.addEventListener('scroll',()=>{
+    btt.classList.toggle('visible',window.scrollY>500);
+  },{passive:true});
+  btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  // ─── Smooth scroll for anchors ───
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      e.preventDefault();
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){
+        const hh=header.offsetHeight;
+        window.scrollTo({top:t.offsetTop-hh,behavior:'smooth'});
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
