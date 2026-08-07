@@ -189,15 +189,10 @@ h1,h2,h3,.heading-font{font-family:'DM Serif Display',serif}
 .step-card p{color:var(--muted);font-size:0.9rem}
 
 /* ─── Testimonials ─── */
-.testimonial-track{display:flex;gap:24px;animation:scroll-ticker 40s linear infinite;min-width:200%}
+.testimonial-track{display:flex;gap:24px;animation:scroll-ticker 22s linear infinite;will-change:transform}
 .testimonial-track:hover{animation-play-state:paused}
-.testimonial-track:hover .testimonial-card{animation-play-state:paused}
-.testimonial-card{min-width:340px;padding:28px;border-radius:var(--radius);background:#fff;border:1px solid var(--light-border);box-shadow:var(--shadow);transition:all 0.4s;flex-shrink:0}
+.testimonial-card{width:340px;min-width:340px;padding:28px;border-radius:var(--radius);background:#fff;border:1px solid var(--light-border);box-shadow:var(--shadow);transition:border-color 0.3s,box-shadow 0.3s;flex-shrink:0;position:relative;z-index:1}
 .testimonial-card:hover{border-color:rgba(99,102,241,0.25);box-shadow:var(--shadow-lg)}
-.float-anim-1 { animation: card-float-1 6s ease-in-out infinite; }
-.float-anim-2 { animation: card-float-2 7s ease-in-out infinite; animation-delay: 1s; }
-@keyframes card-float-1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@keyframes card-float-2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
 .stars{display:flex;gap:2px;margin-bottom:16px}
 .stars i{color:#f59e0b;font-size:1rem}
 .testimonial-card .quote{color:var(--dark2);line-height:1.6;margin-bottom:16px;font-size:0.95rem}
@@ -299,6 +294,8 @@ h1,h2,h3,.heading-font{font-family:'DM Serif Display',serif}
   .call-btn-desktop{display:none!important}
   .features-grid{grid-template-columns:1fr!important}
   .location-grid{grid-template-columns:1fr!important}
+  .testimonial-card{width:280px;min-width:280px;padding:20px}
+  .testimonial-track{gap:16px;animation-duration:18s}
 }
 @media(min-width:641px) and (max-width:1024px){
   .features-grid{grid-template-columns:repeat(2,1fr)!important}
@@ -644,6 +641,102 @@ h1,h2,h3,.heading-font{font-family:'DM Serif Display',serif}
       <div class="service-img"><img src="https://readdy.ai/api/search-image?query=professional%20video%20editing%20workstation%20color%20grading%20effects%20timeline%20realistic%20photography%204k%20ultra%20detailed%20modern%20studio%20setup&width=800&height=600&seq=reel002&orientation=landscape" alt="Video Editing"></div>
     </div>
   </div>
+
+  <!-- Electronics Products -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-cpu-fill"></i></div>
+      <div class="category-title">Electronics Products <span class="hindi">| इलेक्ट्रॉनिक्स प्रोडक्ट्स</span></div>
+    </div>
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="secondhand_laptops.png" alt="Second Hand Laptops"></div>
+      <div class="service-info">
+        <h4>Second Hand Laptops</h4>
+        <p class="hindi">सभी ब्रांड उपलब्ध — Dell, HP, Lenovo, Asus, MacBook, Acer और अन्य। All brands available at best prices with warranty and quality guarantee.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20a%20Second%20Hand%20Laptop" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>iPhones — All Models Available</h4>
+        <p class="hindi">iPhone 12, 13, 14, 15, 16 Series और अन्य — सभी मॉडल उपलब्ध। Best price with original accessories and warranty support.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20an%20iPhone" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="iphones_display.png" alt="iPhones All Models"></div>
+    </div>
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="android_phones.png" alt="Android New Phones"></div>
+      <div class="service-info">
+        <h4>Android New Phones — All Top Brands</h4>
+        <p class="hindi">Samsung, OnePlus, Vivo, Oppo, Realme, Mi और अन्य — सभी टॉप ब्रांड। Latest models at best prices with EMI options available.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20an%20Android%20Phone" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Accessories & Gadgets</h4>
+        <p class="hindi">चार्जर, डेटा केबल, ईयरफोन, पावर बैंक, स्मार्टवॉच, स्पीकर और अन्य — सभी प्रकार के एक्सेसरीज। All types of accessories at best prices.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20Accessories" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="accessories_gadgets.png" alt="Accessories and Gadgets"></div>
+    </div>
+  </div>
+
+  <!-- Electronics Appliances -->
+  <div class="service-category">
+    <div class="category-header reveal">
+      <div class="category-icon"><i class="ri-home-gear-fill"></i></div>
+      <div class="category-title">Electronics Appliances <span class="hindi">| इलेक्ट्रॉनिक्स अप्लायंसेस</span></div>
+    </div>
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="split_ac.png" alt="Air Conditioner AC"></div>
+      <div class="service-info">
+        <h4>Air Conditioner (AC)</h4>
+        <p class="hindi">Split AC, Window AC — सभी प्रमुख ब्रांड उपलब्ध। Installation, servicing, and best deals with EMI facility available.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20an%20AC" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>LED TV — Smart TV</h4>
+        <p class="hindi">LED TV, Smart TV — सभी साइज और ब्रांड उपलब्ध। 4K Ultra HD, Android Smart TV at best prices with home delivery.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20a%20LED%20TV" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="led_tv.png" alt="LED TV Smart TV"></div>
+    </div>
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="air_cooler.png" alt="Air Cooler"></div>
+      <div class="service-info">
+        <h4>Cooler — Desert & Tower</h4>
+        <p class="hindi">डेज़र्ट कूलर, टॉवर कूलर — सभी प्रकार उपलब्ध। Best cooling performance at affordable prices for summer comfort.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20a%20Cooler" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>Refrigerator (Fridge)</h4>
+        <p class="hindi">सिंगल डोर, डबल डोर फ्रिज — सभी ब्रांड उपलब्ध। Energy efficient models at best prices with warranty and EMI options.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20a%20Fridge" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="refrigerator.png" alt="Refrigerator Fridge"></div>
+    </div>
+    <div class="service-row reveal-left">
+      <div class="service-img"><img src="washing_machine.png" alt="Washing Machine"></div>
+      <div class="service-info">
+        <h4>Washing Machine</h4>
+        <p class="hindi">फ्रंट लोड, टॉप लोड, सेमी ऑटोमैटिक — सभी प्रकार उपलब्ध। Top brands at best prices with free delivery and installation.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20a%20Washing%20Machine" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="service-row reverse reveal-right">
+      <div class="service-info">
+        <h4>And Many More Products</h4>
+        <p class="hindi">माइक्रोवेव, गीज़र, RO वॉटर प्यूरीफायर, इंडक्शन कुकटॉप, मिक्सर, आयरन और अन्य — सब कुछ एक ही छत के नीचे। Best quality at best prices.</p>
+        <a href="https://wa.me/918757136563?text=I%20want%20to%20buy%20Home%20Appliances" class="enquire-link"><span>Enquire Now</span><i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="service-img"><img src="kitchen_appliances.png" alt="Kitchen and Home Appliances"></div>
+    </div>
+  </div>
 </div>
 </section>
 
@@ -696,22 +789,20 @@ h1,h2,h3,.heading-font{font-family:'DM Serif Display',serif}
     <span class="section-line"></span>
   </div>
 </div>
-<div style="overflow:hidden; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);" class="reveal">
-  <div class="testimonial-track">
-    <div style="display:flex;gap:24px">
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p><p class="author">Priya Kumari</p><p class="role">Student, Madhubani</p></div>
-      <div class="testimonial-card float-anim-2"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p><p class="author">Rajesh Kumar</p><p class="role">Businessman, Jhanjharpur</p></div>
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p><p class="author">Anita Devi</p><p class="role">Teacher, Kaithinia</p></div>
-      <div class="testimonial-card float-anim-2"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p><p class="author">Amit Singh</p><p class="role">Student, Madhubani</p></div>
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p><p class="author">Sanjay Kumar</p><p class="role">Groom, Jhanjharpur</p></div>
-    </div>
-    <div style="display:flex;gap:24px">
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p><p class="author">Priya Kumari</p><p class="role">Student, Madhubani</p></div>
-      <div class="testimonial-card float-anim-2"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p><p class="author">Rajesh Kumar</p><p class="role">Businessman, Jhanjharpur</p></div>
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p><p class="author">Anita Devi</p><p class="role">Teacher, Kaithinia</p></div>
-      <div class="testimonial-card float-anim-2"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p><p class="author">Amit Singh</p><p class="role">Student, Madhubani</p></div>
-      <div class="testimonial-card float-anim-1"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p><p class="author">Sanjay Kumar</p><p class="role">Groom, Jhanjharpur</p></div>
-    </div>
+<div style="overflow:hidden; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);" class="reveal">
+  <div class="testimonial-track" id="testimonialTrack">
+    <!-- Set 1 -->
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p><p class="author">Priya Kumari</p><p class="role">Student, Madhubani</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p><p class="author">Rajesh Kumar</p><p class="role">Businessman, Jhanjharpur</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p><p class="author">Anita Devi</p><p class="role">Teacher, Kaithinia</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p><p class="author">Amit Singh</p><p class="role">Student, Madhubani</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p><p class="author">Sanjay Kumar</p><p class="role">Groom, Jhanjharpur</p></div>
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">बहुत अच्छी सेवा। मेरा स्कॉलरशिप फॉर्म बहुत जल्दी भर गया। धन्यवाद!</p><p class="author">Priya Kumari</p><p class="role">Student, Madhubani</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Fast and reliable service. Got my RTPS certificate done in just 2 days. Highly recommended!</p><p class="author">Rajesh Kumar</p><p class="role">Businessman, Jhanjharpur</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">केशव जी बहुत मददगार हैं। सभी काम समय पर होता है। AC में बैठकर काम करना बहुत अच्छा लगता है।</p><p class="author">Anita Devi</p><p class="role">Teacher, Kaithinia</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote">Best cyber cafe in Jhanjharpur. Clean environment, fast internet, and very affordable rates.</p><p class="author">Amit Singh</p><p class="role">Student, Madhubani</p></div>
+    <div class="testimonial-card"><div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div><p class="quote hindi">मेरी शादी की फोटोग्राफी बहुत बढ़िया हुई। सभी फोटो HD क्वालिटी में मिले। धन्यवाद!</p><p class="author">Sanjay Kumar</p><p class="role">Groom, Jhanjharpur</p></div>
   </div>
 </div>
 </section>
@@ -962,6 +1053,18 @@ h1,h2,h3,.heading-font{font-family:'DM Serif Display',serif}
       if(t)window.scrollTo({top:t.offsetTop-header.offsetHeight,behavior:'smooth'});
     });
   });
+  // Testimonial seamless loop: calc exact scroll distance from first half of cards
+  const track=document.getElementById('testimonialTrack');
+  if(track){
+    const cards=track.querySelectorAll('.testimonial-card');
+    const half=cards.length/2;
+    const gap=parseFloat(getComputedStyle(track).gap)||24;
+    let scrollDist=0;
+    for(let i=0;i<half;i++) scrollDist+=cards[i].offsetWidth+gap;
+    const style=document.createElement('style');
+    style.textContent='@keyframes scroll-ticker{0%{transform:translateX(0)}100%{transform:translateX(-'+scrollDist+'px)}}';
+    document.head.appendChild(style);
+  }
 })();
 </script>
 </body>
